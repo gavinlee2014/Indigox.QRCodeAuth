@@ -1,0 +1,6 @@
+bin/
+Indigox.QRCodeAuth.Application/obj/
+obj/
+packages/
+Indigox.QRCodeAuth.WebApp.csproj.user
+.vs/

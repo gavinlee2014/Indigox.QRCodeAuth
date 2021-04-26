@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigox.QRCodeAuth.WebApp", "Indigox.QRCodeAuth.WebApp.csproj", "{3DDE19A5-8D41-4BA1-A391-4B6335F5B868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigox.QRCodeAuth.Application", "Indigox.QRCodeAuth.Application\Indigox.QRCodeAuth.Application.csproj", "{5CE483D7-2BA5-4274-80F2-943069A88D7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DDE19A5-8D41-4BA1-A391-4B6335F5B868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDE19A5-8D41-4BA1-A391-4B6335F5B868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDE19A5-8D41-4BA1-A391-4B6335F5B868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDE19A5-8D41-4BA1-A391-4B6335F5B868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE483D7-2BA5-4274-80F2-943069A88D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE483D7-2BA5-4274-80F2-943069A88D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE483D7-2BA5-4274-80F2-943069A88D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE483D7-2BA5-4274-80F2-943069A88D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5EA70E0-88F9-4357-9419-F16FB78BC5A5}
+	EndGlobalSection
+EndGlobal
