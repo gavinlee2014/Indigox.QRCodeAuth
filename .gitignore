@@ -4,3 +4,4 @@ obj/
 packages/
 Indigox.QRCodeAuth.WebApp.csproj.user
 .vs/
+FolderProfile.pubxml.user
