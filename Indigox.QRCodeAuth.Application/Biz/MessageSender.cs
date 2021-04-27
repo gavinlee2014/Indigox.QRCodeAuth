@@ -70,6 +70,14 @@ namespace Indigox.QRCodeAuth.Application.Biz
         private void DispatchMessage(StringPackageInfo packageInfo)
         {
         }
+
+        public bool IsConnected
+        {
+            get
+            {
+                return client.IsConnected;
+            }
+        }
         public async Task<bool> SendAsync(string command, string message)
         {
             bool connected = client.IsConnected;

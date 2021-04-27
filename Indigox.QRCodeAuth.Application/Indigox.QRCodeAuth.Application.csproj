@@ -41,6 +41,7 @@
     <Compile Include="Biz\MessageSender.cs" />
     <Compile Include="Biz\QRCodeUtil.cs" />
     <Compile Include="Biz\SocketHolder.cs" />
+    <Compile Include="Web\AwakeHandler.cs" />
     <Compile Include="Web\InitSocketModule.cs" />
     <Compile Include="Web\AuthCallbackHandler.cs" />
     <Compile Include="Web\AuthorizeHandler.cs" />

@@ -29,8 +29,10 @@ namespace Indigox.QRCodeAuth.Application.Web
 
         private void OnBeginRequest(object sender, EventArgs e)
         {
-            Log.Debug("OnBeginRequest");
-            _ = MessageSender.Instance.SendAsync("INIT", "");
+            if (!MessageSender.Instance.IsConnected)
+            {
+                _ = MessageSender.Instance.SendAsync("INIT", "");
+            }
         }
 
         #endregion
