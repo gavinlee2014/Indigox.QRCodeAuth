@@ -33,26 +33,26 @@ namespace Indigox.QRCodeAuth.Application.Web
             //socket.SendAsync(buffer, WebSocketMessageType.Text, true, CancellationToken.None);
 
             string id = context.Request.Params.Get("code");
-            //string userName = "indigox";
-            //string pwd = "Aa123456";
             Log.Debug("id " + id + " start access");
 
             string userName = context.User.Identity.Name;
             Log.Debug("id " + id + " get user name " + userName);
-            Task<bool> task = MessageSender.Instance.SendAsync("TRANS", id + " " + userName);
-            if (task.Result)
-            {
-                context.Response.Write("<html><header><title></title><script type='text/javascript'>window.location.href='success.html'</script></header><body></body></html>");
-            }
-            else
-            {
-                context.Response.Write("<html><header><title></title><script type='text/javascript'>window.location.href='fail.html'</script></header><body></body></html>");
-            }
-            //task.Start();
-            //_ = MessageSender.Instance.SendAsync("TRANS", id + " " + userName);
-            //context.Response.Redirect("/success.html");
+
+
+            //Task<bool> task = MessageSender.Instance.SendAsync("TRANS", id + " " + userName);
+            //if (task.Result)
+            //{
+            //    context.Response.Write("<html><header><title></title><script type='text/javascript'>window.location.href='success.html'</script></header><body></body></html>");
+            //}
+            //else
+            //{
+            //    context.Response.Write("<html><header><title></title><script type='text/javascript'>window.location.href='fail.html'</script></header><body></body></html>");
+            //}
+
+            _ = MessageSender.Instance.SendAsync("TRANS", id + " " + userName);
+            context.Response.Write("<html><header><title></title><script type='text/javascript'>window.location.href='success.html'</script></header><body></body></html>");
         }
-            
+
     }
 
     //class AuthResultDTO

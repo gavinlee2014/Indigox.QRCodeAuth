@@ -75,22 +75,19 @@ namespace Indigox.QRCodeAuth.Application.Biz
             bool connected = client.IsConnected;
             if (!connected)
             {
-                connected = await ConnectAsync();
+                await ConnectAsync();
             }
             Log.Debug("send command: " + command + " " + message);
-            if (connected)
+
+            try
             {
-                try
-                {
-                    client.Send(Encoding.UTF8.GetBytes(command + " " + message + "\r\n"));
-                    return true;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
+                client.Send(Encoding.UTF8.GetBytes(command + " " + message + "\r\n"));
+                return true;
             }
-            return false;
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
     class DefaultReceiveFilter : TerminatorReceiveFilter<StringPackageInfo>
